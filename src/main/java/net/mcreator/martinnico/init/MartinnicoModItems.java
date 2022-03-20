@@ -12,6 +12,7 @@ import net.minecraft.world.item.Item;
 
 import net.mcreator.martinnico.item.TreeSwingerItem;
 import net.mcreator.martinnico.item.StaffofjudgmentItem;
+import net.mcreator.martinnico.item.LifestealItem;
 import net.mcreator.martinnico.item.JunglewhipItem;
 import net.mcreator.martinnico.item.BloodsickleItem;
 import net.mcreator.martinnico.item.BlankItem;
@@ -27,6 +28,7 @@ public class MartinnicoModItems {
 	public static final Item JUNGLEWHIP = register(new JunglewhipItem());
 	public static final Item BLANK = register(new BlankItem());
 	public static final Item BLOODSICKLE = register(new BloodsickleItem());
+	public static final Item LIFESTEAL = register(new LifestealItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

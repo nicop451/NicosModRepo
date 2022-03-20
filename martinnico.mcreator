@@ -4,7 +4,7 @@
       "name": "Blank",
       "type": "tool",
       "sortid": 3,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "blank",
       "path": "~/Martin"
@@ -31,7 +31,7 @@
       "name": "StaffofjudgmentLivingEntityIsHitWithTool",
       "type": "procedure",
       "sortid": 1,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "staffofjudgment_living_entity_is_hit_with_tool",
       "metadata": {
@@ -48,7 +48,7 @@
       "name": "Staffofjudgment",
       "type": "tool",
       "sortid": 1,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "staffofjudgment",
       "path": "~/Martin"
@@ -57,7 +57,7 @@
       "name": "JunglewhipProjectileHitsLivingEntity",
       "type": "procedure",
       "sortid": 2,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "junglewhip_projectile_hits_living_entity",
       "metadata": {
@@ -74,7 +74,7 @@
       "name": "BloodsickleLivingEntityIsHitWithTool",
       "type": "procedure",
       "sortid": 4,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "bloodsickle_living_entity_is_hit_with_tool",
       "metadata": {
@@ -91,7 +91,7 @@
       "name": "GrappleHookHitsAnything",
       "type": "procedure",
       "sortid": 1,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "grapple_hook_hits_anything",
       "metadata": {
@@ -120,16 +120,26 @@
       "name": "TreeSwinger",
       "type": "rangeditem",
       "sortid": 1,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "tree_swinger",
       "path": "~/Nico"
+    },
+    {
+      "name": "Lifesteal",
+      "type": "tool",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lifesteal",
+      "path": "~/Martin"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.martinnico.lifesteal": "Lifesteal",
       "item.martinnico.junglewhip": "Junglewhip",
       "item.martinnico.bloodsickle": "Bloodsickle"
     }
