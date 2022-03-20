@@ -11,6 +11,7 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraft.world.item.Item;
 
 import net.mcreator.martinnico.item.WdItem;
+import net.mcreator.martinnico.item.PenisItem;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -19,6 +20,7 @@ import java.util.ArrayList;
 public class MartinnicoModItems {
 	private static final List<Item> REGISTRY = new ArrayList<>();
 	public static final Item WD = register(new WdItem());
+	public static final Item PENIS = register(new PenisItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

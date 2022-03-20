@@ -7,13 +7,23 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "wd"
+    },
+    {
+      "name": "Penis",
+      "type": "tool",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "penis",
+      "path": "~/Martin"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.martinnico.wd": "Wd"
+      "item.martinnico.wd": "Wd",
+      "item.martinnico.penis": "Penis"
     }
   },
   "foldersRoot": {
