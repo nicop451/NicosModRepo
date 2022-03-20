@@ -1,9 +1,50 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "GrappleHookHitsAnything",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grapple_hook_hits_anything",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Nico"
+    },
+    {
+      "name": "TreeSwinger",
+      "type": "rangeditem",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tree_swinger",
+      "path": "~/Nico"
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.martinnico.tree_swinger": "Tree Swinger"
+    }
   },
   "foldersRoot": {
     "name": "~",

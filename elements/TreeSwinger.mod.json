@@ -1,0 +1,51 @@
+{
+  "_fv": 24,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "tree_swinger",
+    "customModelName": "Normal",
+    "name": "Tree Swinger",
+    "specialInfo": [
+      "Grapple gun that uses reinforced vines."
+    ],
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 100,
+    "actionSound": {
+      "value": "ambient.underwater.exit"
+    },
+    "hasGlow": false,
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 0.4,
+    "bulletDamage": 5.0,
+    "bulletKnockback": 5,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "Blocks.POLISHED_BLACKSTONE_BUTTON"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "GrappleHookHitsAnything"
+    },
+    "onBulletHitsPlayer": {
+      "name": "GrappleHookHitsAnything"
+    },
+    "onBulletHitsEntity": {
+      "name": "GrappleHookHitsAnything"
+    },
+    "onBulletFlyingTick": {
+      "name": "GrappleHookHitsAnything"
+    }
+  }
+}
