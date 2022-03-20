@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "martinnico:blocks/dark_blue_mushroom_block_bottom",
+    "up": "martinnico:blocks/dark_blue_mushroom_side_texture",
+    "north": "martinnico:blocks/dark_blue_mushroom_side_texture",
+    "east": "martinnico:blocks/dark_blue_mushroom_side_texture",
+    "south": "martinnico:blocks/dark_blue_mushroom_side_texture",
+    "west": "martinnico:blocks/dark_blue_mushroom_side_texture",
+    "particle": "martinnico:blocks/dark_blue_mushroom_block_bottom"
+  }
+}

@@ -146,6 +146,24 @@
         ]
       },
       "path": "~/Martin"
+    },
+    {
+      "name": "ShroomSpores",
+      "type": "particle",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shroom_spores",
+      "path": "~/Nico/particles"
+    },
+    {
+      "name": "DarkBlueMushroomBlock",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_blue_mushroom_block",
+      "path": "~/Nico/particles"
     }
   ],
   "variable_elements": [],
@@ -154,6 +172,7 @@
     "en_us": {
       "item.martinnico.lifesteal": "Lifesteal",
       "item.martinnico.staffofjudgment": "Staffofjudgment",
+      "block.martinnico.dark_blue_mushroom_block": "Dark Blue Mushroom Block",
       "item.martinnico.junglewhip": "Junglewhip",
       "item.martinnico.blank": "Blank",
       "item.martinnico.bloodsickle": "Bloodsickle",
@@ -165,7 +184,25 @@
     "children": [
       {
         "name": "Nico",
-        "children": []
+        "children": [
+          {
+            "name": "Biomes",
+            "children": [
+              {
+                "name": "Dark Mushroom Biome Blocks",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Blocks",
+            "children": []
+          },
+          {
+            "name": "particles",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Martin",

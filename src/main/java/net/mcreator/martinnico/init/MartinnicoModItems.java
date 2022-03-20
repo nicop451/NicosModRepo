@@ -8,7 +8,10 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
 
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.martinnico.item.TreeSwingerItem;
 import net.mcreator.martinnico.item.StaffofjudgmentItem;
@@ -29,10 +32,15 @@ public class MartinnicoModItems {
 	public static final Item BLANK = register(new BlankItem());
 	public static final Item BLOODSICKLE = register(new BloodsickleItem());
 	public static final Item LIFESTEAL = register(new LifestealItem());
+	public static final Item DARK_BLUE_MUSHROOM_BLOCK = register(MartinnicoModBlocks.DARK_BLUE_MUSHROOM_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
 		return item;
+	}
+
+	private static Item register(Block block, CreativeModeTab tab) {
+		return register(new BlockItem(block, new Item.Properties().tab(tab)).setRegistryName(block.getRegistryName()));
 	}
 
 	@SubscribeEvent
