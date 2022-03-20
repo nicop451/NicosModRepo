@@ -15,6 +15,7 @@ import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 public class MartinnicoModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
+		event.registerEntityRenderer(MartinnicoModEntities.TREE_SWINGER, ThrownItemRenderer::new);
 		event.registerEntityRenderer(MartinnicoModEntities.JUNGLEWHIP, ThrownItemRenderer::new);
 	}
 }

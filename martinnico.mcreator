@@ -1,6 +1,33 @@
 {
   "mod_elements": [
     {
+      "name": "Blank",
+      "type": "tool",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blank",
+      "path": "~/Martin"
+    },
+    {
+      "name": "Bloodsickle",
+      "type": "tool",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bloodsickle",
+      "path": "~/Martin"
+    },
+    {
+      "name": "Junglewhip",
+      "type": "rangeditem",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "junglewhip",
+      "path": "~/Martin"
+    },
+    {
       "name": "StaffofjudgmentLivingEntityIsHitWithTool",
       "type": "procedure",
       "sortid": 1,
@@ -44,24 +71,6 @@
       "path": "~/Martin"
     },
     {
-      "name": "Blank",
-      "type": "tool",
-      "sortid": 3,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blank",
-      "path": "~/Martin"
-    },
-    {
-      "name": "Junglewhip",
-      "type": "rangeditem",
-      "sortid": 2,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "junglewhip",
-      "path": "~/Martin"
-    },
-    {
       "name": "BloodsickleLivingEntityIsHitWithTool",
       "type": "procedure",
       "sortid": 4,
@@ -79,22 +88,49 @@
       "path": "~/Martin"
     },
     {
-      "name": "Bloodsickle",
-      "type": "tool",
-      "sortid": 4,
+      "name": "GrappleHookHitsAnything",
+      "type": "procedure",
+      "sortid": 1,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bloodsickle",
-      "path": "~/Martin"
+      "registry_name": "grapple_hook_hits_anything",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Nico"
+    },
+    {
+      "name": "TreeSwinger",
+      "type": "rangeditem",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tree_swinger",
+      "path": "~/Nico"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.martinnico.staffofjudgment": "Staffofjudgment",
       "item.martinnico.junglewhip": "Junglewhip",
-      "item.martinnico.blank": "Blank",
       "item.martinnico.bloodsickle": "Bloodsickle"
     }
   },
@@ -102,11 +138,11 @@
     "name": "~",
     "children": [
       {
-        "name": "Martin",
+        "name": "Nico",
         "children": []
       },
       {
-        "name": "Nico",
+        "name": "Martin",
         "children": []
       }
     ]

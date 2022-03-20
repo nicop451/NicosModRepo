@@ -10,6 +10,7 @@ import net.minecraftforge.event.RegistryEvent;
 
 import net.minecraft.world.item.Item;
 
+import net.mcreator.martinnico.item.TreeSwingerItem;
 import net.mcreator.martinnico.item.StaffofjudgmentItem;
 import net.mcreator.martinnico.item.JunglewhipItem;
 import net.mcreator.martinnico.item.BloodsickleItem;
@@ -22,6 +23,7 @@ import java.util.ArrayList;
 public class MartinnicoModItems {
 	private static final List<Item> REGISTRY = new ArrayList<>();
 	public static final Item STAFFOFJUDGMENT = register(new StaffofjudgmentItem());
+	public static final Item TREE_SWINGER = register(new TreeSwingerItem());
 	public static final Item JUNGLEWHIP = register(new JunglewhipItem());
 	public static final Item BLANK = register(new BlankItem());
 	public static final Item BLOODSICKLE = register(new BloodsickleItem());
