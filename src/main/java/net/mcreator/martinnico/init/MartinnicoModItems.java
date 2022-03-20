@@ -10,12 +10,7 @@ import net.minecraftforge.event.RegistryEvent;
 
 import net.minecraft.world.item.Item;
 
-import net.mcreator.martinnico.item.NicodiumSwordItem;
-import net.mcreator.martinnico.item.NicodiumShovelItem;
-import net.mcreator.martinnico.item.NicodiumPickaxeItem;
-import net.mcreator.martinnico.item.NicodiumHoeItem;
-import net.mcreator.martinnico.item.NicodiumAxeItem;
-import net.mcreator.martinnico.item.BeepItem;
+import net.mcreator.martinnico.item.WdItem;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -23,12 +18,7 @@ import java.util.ArrayList;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class MartinnicoModItems {
 	private static final List<Item> REGISTRY = new ArrayList<>();
-	public static final Item BEEP = register(new BeepItem());
-	public static final Item NICODIUM_PICKAXE = register(new NicodiumPickaxeItem());
-	public static final Item NICODIUM_AXE = register(new NicodiumAxeItem());
-	public static final Item NICODIUM_SWORD = register(new NicodiumSwordItem());
-	public static final Item NICODIUM_SHOVEL = register(new NicodiumShovelItem());
-	public static final Item NICODIUM_HOE = register(new NicodiumHoeItem());
+	public static final Item WD = register(new WdItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

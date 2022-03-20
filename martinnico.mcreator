@@ -1,109 +1,33 @@
 {
   "mod_elements": [
     {
-      "name": "Beep",
+      "name": "Wd",
       "type": "item",
       "sortid": 1,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "beep"
-    },
-    {
-      "name": "NicodiumPickaxe",
-      "type": "tool",
-      "sortid": 2,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nicodium_pickaxe"
-    },
-    {
-      "name": "NicodiumAxe",
-      "type": "tool",
-      "sortid": 3,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nicodium_axe"
-    },
-    {
-      "name": "NicodiumSword",
-      "type": "tool",
-      "sortid": 4,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nicodium_sword"
-    },
-    {
-      "name": "NicodiumShovel",
-      "type": "tool",
-      "sortid": 5,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nicodium_shovel"
-    },
-    {
-      "name": "NicodiumHoe",
-      "type": "tool",
-      "sortid": 6,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nicodium_hoe"
-    },
-    {
-      "name": "NicodiumPickaxeRecipe",
-      "type": "recipe",
-      "sortid": 7,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nicodium_pickaxe_recipe"
-    },
-    {
-      "name": "NicodiumAxeRecipe",
-      "type": "recipe",
-      "sortid": 8,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nicodium_axe_recipe"
-    },
-    {
-      "name": "NicodiumSwordRecipe",
-      "type": "recipe",
-      "sortid": 9,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nicodium_sword_recipe"
-    },
-    {
-      "name": "NicodiumShovelRecipe",
-      "type": "recipe",
-      "sortid": 10,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nicodium_shovel_recipe"
-    },
-    {
-      "name": "NicodiumHoeRecipe",
-      "type": "recipe",
-      "sortid": 11,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nicodium_hoe_recipe"
+      "registry_name": "wd"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.martinnico.nicodium_pickaxe": "Nicodium Pickaxe",
-      "item.martinnico.nicodium_shovel": "Nicodium Shovel",
-      "item.martinnico.nicodium_sword": "Nicodium Sword",
-      "item.martinnico.beep": "Beep",
-      "item.martinnico.nicodium_axe": "Nicodium Axe",
-      "item.martinnico.nicodium_hoe": "Nicodium Hoe"
+      "item.martinnico.wd": "Wd"
     }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Martin",
+        "children": []
+      },
+      {
+        "name": "Nico",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "martinnico",

@@ -6,10 +6,10 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 
-public class BeepItem extends Item {
-	public BeepItem() {
+public class WdItem extends Item {
+	public WdItem() {
 		super(new Item.Properties().tab(CreativeModeTab.TAB_MISC).stacksTo(64).rarity(Rarity.COMMON));
-		setRegistryName("beep");
+		setRegistryName("wd");
 	}
 
 	@Override

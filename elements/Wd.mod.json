@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "ft",
+    "texture": "nicodium_sword",
     "customModelName": "Normal",
-    "name": "Beep",
+    "name": "Wd",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "MISC"
