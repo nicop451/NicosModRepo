@@ -11,6 +11,11 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraft.world.item.Item;
 
 import net.mcreator.martinnico.item.TreeSwingerItem;
+import net.mcreator.martinnico.item.StaffofjudgmentItem;
+import net.mcreator.martinnico.item.LifestealItem;
+import net.mcreator.martinnico.item.JunglewhipItem;
+import net.mcreator.martinnico.item.BloodsickleItem;
+import net.mcreator.martinnico.item.BlankItem;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -18,7 +23,12 @@ import java.util.ArrayList;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class MartinnicoModItems {
 	private static final List<Item> REGISTRY = new ArrayList<>();
+	public static final Item STAFFOFJUDGMENT = register(new StaffofjudgmentItem());
 	public static final Item TREE_SWINGER = register(new TreeSwingerItem());
+	public static final Item JUNGLEWHIP = register(new JunglewhipItem());
+	public static final Item BLANK = register(new BlankItem());
+	public static final Item BLOODSICKLE = register(new BloodsickleItem());
+	public static final Item LIFESTEAL = register(new LifestealItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

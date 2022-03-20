@@ -15,6 +15,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.martinnico.entity.TreeSwingerEntity;
+import net.mcreator.martinnico.entity.JunglewhipEntity;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -24,6 +25,9 @@ public class MartinnicoModEntities {
 	private static final List<EntityType<?>> REGISTRY = new ArrayList<>();
 	public static final EntityType<TreeSwingerEntity> TREE_SWINGER = register("entitybullettree_swinger",
 			EntityType.Builder.<TreeSwingerEntity>of(TreeSwingerEntity::new, MobCategory.MISC).setCustomClientFactory(TreeSwingerEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final EntityType<JunglewhipEntity> JUNGLEWHIP = register("entitybulletjunglewhip",
+			EntityType.Builder.<JunglewhipEntity>of(JunglewhipEntity::new, MobCategory.MISC).setCustomClientFactory(JunglewhipEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> EntityType<T> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
