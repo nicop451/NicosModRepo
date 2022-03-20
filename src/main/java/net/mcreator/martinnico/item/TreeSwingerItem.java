@@ -56,7 +56,7 @@ public class TreeSwingerItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (true) {
-				TreeSwingerEntity entityarrow = TreeSwingerEntity.shoot(world, entity, world.getRandom(), 0.4f, 5, 5);
+				TreeSwingerEntity entityarrow = TreeSwingerEntity.shoot(world, entity, world.getRandom(), 0.8f, 5, 5);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 			}
