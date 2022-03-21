@@ -5,7 +5,7 @@
     "structure": "gloomshroomlargetall",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First block",
-    "spawnProbability": 100000,
+    "spawnProbability": 1000000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
@@ -16,7 +16,11 @@
       "Surface"
     ],
     "restrictionBlocks": [],
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:MoonShroomBiome"
+      }
+    ],
     "ignoreBlocks": "AIR"
   }
 }

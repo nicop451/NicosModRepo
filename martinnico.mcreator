@@ -138,7 +138,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_blue_mushroom_block",
-      "path": "~/Nico/Blocks"
+      "path": "~/Nico/Biomes/MoonShroomBiome/Blocks"
     },
     {
       "name": "MoonShroom",
@@ -147,7 +147,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "moon_shroom",
-      "path": "~/Nico/Biomes/Dark Mushroom Biome Blocks"
+      "path": "~/Nico/Biomes/MoonShroomBiome"
     },
     {
       "name": "ReinforcedVine",
@@ -156,7 +156,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "reinforced_vine",
-      "path": "~/Nico/Blocks/ForVineGun"
+      "path": "~/Nico/Blocks/VineGun"
     },
     {
       "name": "TreeSwingerProjectileHitsBlock",
@@ -214,13 +214,32 @@
           }
         ]
       },
-      "path": "~/Nico/Blocks/ForVineGun"
+      "path": "~/Nico/Blocks/VineGun"
+    },
+    {
+      "name": "VineBuildParticle",
+      "type": "particle",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vine_build_particle",
+      "path": "~/Nico/particles"
+    },
+    {
+      "name": "MoonShroomBiome",
+      "type": "biome",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moon_shroom_biome",
+      "path": "~/Nico/Biomes/MoonShroomBiome"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "biome.martinnico.moon_shroom_biome": "Moon Shroom Biome",
       "item.martinnico.lifesteal": "Lifesteal",
       "item.martinnico.staffofjudgment": "Staffofjudgment",
       "block.martinnico.dark_blue_mushroom_block": "Dark Blue Mushroom Block",
@@ -241,8 +260,13 @@
             "name": "Biomes",
             "children": [
               {
-                "name": "Dark Mushroom Biome Blocks",
-                "children": []
+                "name": "MoonShroomBiome",
+                "children": [
+                  {
+                    "name": "Blocks",
+                    "children": []
+                  }
+                ]
               }
             ]
           },
@@ -250,7 +274,7 @@
             "name": "Blocks",
             "children": [
               {
-                "name": "ForVineGun",
+                "name": "VineGun",
                 "children": []
               }
             ]

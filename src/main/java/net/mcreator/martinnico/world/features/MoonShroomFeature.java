@@ -22,7 +22,7 @@ import java.util.Set;
 public class MoonShroomFeature extends Feature<NoneFeatureConfiguration> {
 	public static final MoonShroomFeature FEATURE = (MoonShroomFeature) new MoonShroomFeature().setRegistryName("martinnico:moon_shroom");
 	public static final ConfiguredFeature<?, ?> CONFIGURED_FEATURE = FEATURE.configured(FeatureConfiguration.NONE);
-	public static final Set<ResourceLocation> GENERATE_BIOMES = null;
+	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("martinnico:moon_shroom_biome"));
 	private StructureTemplate template = null;
 
 	public MoonShroomFeature() {
@@ -41,7 +41,7 @@ public class MoonShroomFeature extends Feature<NoneFeatureConfiguration> {
 			template = context.level().getLevel().getStructureManager().getOrCreate(new ResourceLocation("martinnico", "gloomshroomlargetall"));
 		if (template == null)
 			return false;
-		if ((context.random().nextInt(1000000) + 1) <= 100000) {
+		if ((context.random().nextInt(1000000) + 1) <= 1000000) {
 			boolean anyPlaced = false;
 			int count = context.random().nextInt(1) + 1;
 			for (int a = 0; a < count; a++) {

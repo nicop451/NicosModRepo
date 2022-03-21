@@ -16,6 +16,7 @@ import net.minecraft.client.particle.SpriteSet;
 import net.minecraft.client.particle.ParticleProvider;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.martinnico.client.particle.VineBuildParticleParticle;
 import net.mcreator.martinnico.client.particle.ShroomSporesParticle;
 
 import java.util.function.Function;
@@ -27,6 +28,8 @@ public class MartinnicoModParticles {
 	private static final Map<ParticleType<?>, Function<SpriteSet, ParticleProvider<SimpleParticleType>>> REGISTRY = new HashMap<>();
 	public static final SimpleParticleType SHROOM_SPORES = register(new SimpleParticleType(true).setRegistryName("shroom_spores"),
 			ShroomSporesParticle::provider);
+	public static final SimpleParticleType VINE_BUILD_PARTICLE = register(new SimpleParticleType(true).setRegistryName("vine_build_particle"),
+			VineBuildParticleParticle::provider);
 
 	private static SimpleParticleType register(ParticleType<?> particle, Function<SpriteSet, ParticleProvider<SimpleParticleType>> provider) {
 		REGISTRY.put(particle, provider);

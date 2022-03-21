@@ -105,7 +105,7 @@ public class ReinforcedVineBlock extends Block implements SimpleWaterloggedBlock
 	@Override
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
-		world.getBlockTicks().scheduleTick(pos, this, 4);
+		world.getBlockTicks().scheduleTick(pos, this, 3);
 	}
 
 	@Override
@@ -116,7 +116,7 @@ public class ReinforcedVineBlock extends Block implements SimpleWaterloggedBlock
 		int z = pos.getZ();
 
 		ReinforcedVineUpdateTickProcedure.execute(world, x, y, z);
-		world.getBlockTicks().scheduleTick(pos, this, 4);
+		world.getBlockTicks().scheduleTick(pos, this, 3);
 	}
 
 	@OnlyIn(Dist.CLIENT)

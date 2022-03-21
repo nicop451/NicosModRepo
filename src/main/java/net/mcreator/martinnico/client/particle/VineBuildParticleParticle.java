@@ -13,21 +13,21 @@ import net.minecraft.client.particle.Particle;
 import net.minecraft.client.multiplayer.ClientLevel;
 
 @OnlyIn(Dist.CLIENT)
-public class ShroomSporesParticle extends TextureSheetParticle {
-	public static ShroomSporesParticleProvider provider(SpriteSet spriteSet) {
-		return new ShroomSporesParticleProvider(spriteSet);
+public class VineBuildParticleParticle extends TextureSheetParticle {
+	public static VineBuildParticleParticleProvider provider(SpriteSet spriteSet) {
+		return new VineBuildParticleParticleProvider(spriteSet);
 	}
 
-	public static class ShroomSporesParticleProvider implements ParticleProvider<SimpleParticleType> {
+	public static class VineBuildParticleParticleProvider implements ParticleProvider<SimpleParticleType> {
 		private final SpriteSet spriteSet;
 
-		public ShroomSporesParticleProvider(SpriteSet spriteSet) {
+		public VineBuildParticleParticleProvider(SpriteSet spriteSet) {
 			this.spriteSet = spriteSet;
 		}
 
 		public Particle createParticle(SimpleParticleType typeIn, ClientLevel worldIn, double x, double y, double z, double xSpeed, double ySpeed,
 				double zSpeed) {
-			return new ShroomSporesParticle(worldIn, x, y, z, xSpeed, ySpeed, zSpeed, this.spriteSet);
+			return new VineBuildParticleParticle(worldIn, x, y, z, xSpeed, ySpeed, zSpeed, this.spriteSet);
 		}
 	}
 
@@ -36,30 +36,25 @@ public class ShroomSporesParticle extends TextureSheetParticle {
 	private float angularVelocity;
 	private float angularAcceleration;
 
-	protected ShroomSporesParticle(ClientLevel world, double x, double y, double z, double vx, double vy, double vz, SpriteSet spriteSet) {
+	protected VineBuildParticleParticle(ClientLevel world, double x, double y, double z, double vx, double vy, double vz, SpriteSet spriteSet) {
 		super(world, x, y, z);
 		this.spriteSet = spriteSet;
-		this.setSize(0.1f, 0.1f);
-		this.quadSize *= 0.6f;
-		this.lifetime = 100;
-		this.gravity = 0.04f;
+		this.setSize(0.2f, 0.2f);
+		this.quadSize *= 0.7999999999999999f;
+		this.lifetime = 10;
+		this.gravity = 0f;
 		this.hasPhysics = false;
-		this.xd = vx * 0;
-		this.yd = vy * 0;
-		this.zd = vz * 0;
-		this.angularVelocity = 0.1f;
-		this.angularAcceleration = 0f;
+		this.xd = vx * 0.3;
+		this.yd = vy * 0.3;
+		this.zd = vz * 0.3;
+		this.angularVelocity = 0.2f;
+		this.angularAcceleration = 0.02f;
 		this.pickSprite(spriteSet);
 	}
 
 	@Override
-	public int getLightColor(float partialTick) {
-		return 15728880;
-	}
-
-	@Override
 	public ParticleRenderType getRenderType() {
-		return ParticleRenderType.PARTICLE_SHEET_LIT;
+		return ParticleRenderType.PARTICLE_SHEET_OPAQUE;
 	}
 
 	@Override

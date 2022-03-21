@@ -90,7 +90,7 @@ public class TreeSwingerEntity extends AbstractArrow implements ItemSupplier {
 		entityarrow.setKnockback(knockback);
 		world.addFreshEntity(entityarrow);
 		world.playSound((Player) null, entity.getX(), entity.getY(), entity.getZ(),
-				ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ambient.underwater.exit")), SoundSource.PLAYERS, 1,
+				ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.dripstone_block.hit")), SoundSource.PLAYERS, 1,
 				1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
 		return entityarrow;
 	}
@@ -110,7 +110,7 @@ public class TreeSwingerEntity extends AbstractArrow implements ItemSupplier {
 		double y = entity.getY();
 		double z = entity.getZ();
 		entity.level.playSound((Player) null, (double) x, (double) y, (double) z,
-				ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ambient.underwater.exit")), SoundSource.PLAYERS, 1,
+				ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.dripstone_block.hit")), SoundSource.PLAYERS, 1,
 				1f / (new Random().nextFloat() * 0.5f + 1));
 		return entityarrow;
 	}

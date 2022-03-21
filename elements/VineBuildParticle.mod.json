@@ -1,0 +1,21 @@
+{
+  "_fv": 24,
+  "_type": "particle",
+  "definition": {
+    "texture": "leaves_particle_texture.png",
+    "animate": false,
+    "frameDuration": 1,
+    "width": 0.2,
+    "height": 0.2,
+    "scale": 0.7999999999999999,
+    "speedFactor": 0.3,
+    "gravity": 0.0,
+    "maxAge": 10,
+    "maxAgeDiff": 0,
+    "angularVelocity": 0.2,
+    "angularAcceleration": 0.02,
+    "canCollide": false,
+    "alwaysShow": true,
+    "renderType": "OPAQUE"
+  }
+}

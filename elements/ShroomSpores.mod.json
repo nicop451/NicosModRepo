@@ -12,9 +12,9 @@
     "gravity": 0.04,
     "maxAge": 100,
     "maxAgeDiff": 0,
-    "angularVelocity": 0.0,
+    "angularVelocity": 0.1,
     "angularAcceleration": 0.0,
-    "canCollide": true,
+    "canCollide": false,
     "alwaysShow": true,
     "renderType": "LIT"
   }

@@ -19,7 +19,7 @@
     "shootConstantly": false,
     "usageCount": 100,
     "actionSound": {
-      "value": "ambient.underwater.exit"
+      "value": "block.dripstone_block.hit"
     },
     "hasGlow": false,
     "animation": "bow",
