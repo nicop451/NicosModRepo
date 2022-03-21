@@ -16,6 +16,7 @@ import net.minecraft.world.entity.Entity;
 
 import net.mcreator.martinnico.entity.TreeSwingerEntity;
 import net.mcreator.martinnico.entity.JunglewhipEntity;
+import net.mcreator.martinnico.entity.GfEntity;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -29,6 +30,8 @@ public class MartinnicoModEntities {
 	public static final EntityType<JunglewhipEntity> JUNGLEWHIP = register("entitybulletjunglewhip",
 			EntityType.Builder.<JunglewhipEntity>of(JunglewhipEntity::new, MobCategory.MISC).setCustomClientFactory(JunglewhipEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final EntityType<GfEntity> GF = register("gf", EntityType.Builder.<GfEntity>of(GfEntity::new, MobCategory.MONSTER)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GfEntity::new).sized(0.6f, 1.8f));
 
 	private static <T extends Entity> EntityType<T> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		EntityType<T> entityType = (EntityType<T>) entityTypeBuilder.build(registryname).setRegistryName(registryname);
@@ -44,10 +47,12 @@ public class MartinnicoModEntities {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
+			GfEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
+		event.put(GF, GfEntity.createAttributes().build());
 	}
 }

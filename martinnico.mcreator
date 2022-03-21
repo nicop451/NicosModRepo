@@ -233,6 +233,15 @@
       "locked_code": false,
       "registry_name": "moon_shroom_biome",
       "path": "~/Nico/Biomes/MoonShroomBiome"
+    },
+    {
+      "name": "Gf",
+      "type": "livingentity",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gf",
+      "path": "~/Nico"
     }
   ],
   "variable_elements": [],
@@ -242,10 +251,12 @@
       "biome.martinnico.moon_shroom_biome": "Moon Shroom Biome",
       "item.martinnico.lifesteal": "Lifesteal",
       "item.martinnico.staffofjudgment": "Staffofjudgment",
+      "entity.martinnico.gf": "Gf",
       "block.martinnico.dark_blue_mushroom_block": "Dark Blue Mushroom Block",
       "item.martinnico.junglewhip": "Junglewhip",
       "item.martinnico.blank": "Blank",
       "block.martinnico.reinforced_vine": "Reinforced Vine",
+      "item.martinnico.gf_spawn_egg": "Gf Spawn Egg",
       "item.martinnico.bloodsickle": "Bloodsickle",
       "item.martinnico.tree_swinger": "Tree Swinger"
     }
@@ -303,8 +314,12 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "mcreator_link",
+      "geckolib"
+    ],
     "currentGenerator": "forge-1.17.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.martinnico",
     "lockBaseModFiles": false
   },

@@ -9,6 +9,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
 
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
@@ -34,6 +35,8 @@ public class MartinnicoModItems {
 	public static final Item LIFESTEAL = register(new LifestealItem());
 	public static final Item DARK_BLUE_MUSHROOM_BLOCK = register(MartinnicoModBlocks.DARK_BLUE_MUSHROOM_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final Item REINFORCED_VINE = register(MartinnicoModBlocks.REINFORCED_VINE, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final Item GF = register(
+			new SpawnEggItem(MartinnicoModEntities.GF, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)).setRegistryName("gf_spawn_egg"));
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

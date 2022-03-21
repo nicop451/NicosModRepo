@@ -1,0 +1,25 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "Test.Rotate": {
+      "loop": true,
+      "animation_length": 2.5,
+      "bones": {
+        "bone": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "2.5": [
+              -180,
+              0,
+              -150
+            ]
+          }
+        }
+      }
+    }
+  }
+}

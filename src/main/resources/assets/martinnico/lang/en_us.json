@@ -2,10 +2,12 @@
   "biome.martinnico.moon_shroom_biome": "Moon Shroom Biome",
   "item.martinnico.lifesteal": "Lifesteal",
   "item.martinnico.staffofjudgment": "Staffofjudgment",
+  "entity.martinnico.gf": "Gf",
   "block.martinnico.dark_blue_mushroom_block": "Dark Blue Mushroom Block",
   "item.martinnico.junglewhip": "Junglewhip",
   "item.martinnico.blank": "Blank",
   "block.martinnico.reinforced_vine": "Reinforced Vine",
+  "item.martinnico.gf_spawn_egg": "Gf Spawn Egg",
   "item.martinnico.bloodsickle": "Bloodsickle",
   "item.martinnico.tree_swinger": "Tree Swinger"
 }
