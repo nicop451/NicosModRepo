@@ -36,16 +36,7 @@
     "bulletModel": "Default",
     "customBulletModelTexture": "",
     "onBulletHitsBlock": {
-      "name": "GrappleHookHitsAnything"
-    },
-    "onBulletHitsPlayer": {
-      "name": "GrappleHookHitsAnything"
-    },
-    "onBulletHitsEntity": {
-      "name": "GrappleHookHitsAnything"
-    },
-    "onBulletFlyingTick": {
-      "name": "GrappleHookHitsAnything"
+      "name": "TreeSwingerProjectileHitsBlock"
     }
   }
 }

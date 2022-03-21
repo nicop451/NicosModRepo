@@ -36,10 +36,10 @@ public class ShroomSporesParticle extends TextureSheetParticle {
 	protected ShroomSporesParticle(ClientLevel world, double x, double y, double z, double vx, double vy, double vz, SpriteSet spriteSet) {
 		super(world, x, y, z);
 		this.spriteSet = spriteSet;
-		this.setSize(0.2f, 0.2f);
-
-		this.lifetime = 20;
-		this.gravity = 0.6f;
+		this.setSize(0.1f, 0.1f);
+		this.quadSize *= 0.6f;
+		this.lifetime = 100;
+		this.gravity = 0.04f;
 		this.hasPhysics = true;
 		this.xd = vx * 0;
 		this.yd = vy * 0;

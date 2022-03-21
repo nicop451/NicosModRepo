@@ -88,31 +88,6 @@
       "path": "~/Martin"
     },
     {
-      "name": "GrappleHookHitsAnything",
-      "type": "procedure",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "grapple_hook_hits_anything",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "imediatesourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Nico"
-    },
-    {
       "name": "TreeSwinger",
       "type": "rangeditem",
       "sortid": 1,
@@ -159,11 +134,87 @@
     {
       "name": "DarkBlueMushroomBlock",
       "type": "block",
-      "sortid": 7,
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_blue_mushroom_block",
-      "path": "~/Nico/particles"
+      "path": "~/Nico/Blocks"
+    },
+    {
+      "name": "MoonShroom",
+      "type": "structure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moon_shroom",
+      "path": "~/Nico/Biomes/Dark Mushroom Biome Blocks"
+    },
+    {
+      "name": "ReinforcedVine",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforced_vine",
+      "path": "~/Nico/Blocks/ForVineGun"
+    },
+    {
+      "name": "TreeSwingerProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tree_swinger_projectile_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Nico"
+    },
+    {
+      "name": "ReinforcedVineUpdateTick",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforced_vine_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Nico/Blocks/ForVineGun"
     }
   ],
   "variable_elements": [],
@@ -175,6 +226,7 @@
       "block.martinnico.dark_blue_mushroom_block": "Dark Blue Mushroom Block",
       "item.martinnico.junglewhip": "Junglewhip",
       "item.martinnico.blank": "Blank",
+      "block.martinnico.reinforced_vine": "Reinforced Vine",
       "item.martinnico.bloodsickle": "Bloodsickle",
       "item.martinnico.tree_swinger": "Tree Swinger"
     }
@@ -196,7 +248,12 @@
           },
           {
             "name": "Blocks",
-            "children": []
+            "children": [
+              {
+                "name": "ForVineGun",
+                "children": []
+              }
+            ]
           },
           {
             "name": "particles",

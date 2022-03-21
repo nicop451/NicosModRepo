@@ -2,24 +2,24 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "dark_blue_mushroom_block_bottom",
-    "textureTop": "dark_blue_mushroom_side_texture",
-    "textureLeft": "dark_blue_mushroom_side_texture",
-    "textureFront": "dark_blue_mushroom_side_texture",
-    "textureRight": "dark_blue_mushroom_side_texture",
-    "textureBack": "dark_blue_mushroom_side_texture",
-    "renderType": 10,
-    "customModelName": "Normal",
+    "texture": "vinetexture",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
+    "renderType": 2,
+    "customModelName": "vinerope:default",
     "rotationMode": 0,
-    "emissiveRendering": true,
-    "displayFluidOverlay": false,
+    "emissiveRendering": false,
+    "displayFluidOverlay": true,
     "itemTexture": "",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": false,
+    "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "SOLID",
+    "transparencyType": "CUTOUT",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -32,12 +32,12 @@
         "subtract": false
       }
     ],
-    "name": "Dark Blue Mushroom Block",
+    "name": "Reinforced Vine",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
-    "isWaterloggable": false,
+    "isWaterloggable": true,
     "creativeTab": {
       "value": "BUILDING_BLOCKS"
     },
@@ -50,11 +50,11 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 15,
+    "lightOpacity": 0,
     "material": {
-      "value": "WOOD"
+      "value": "CLOTH"
     },
-    "tickRate": 10,
+    "tickRate": 4,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -69,15 +69,15 @@
     "aiPathNodeType": "DEFAULT",
     "flammability": 0,
     "fireSpreadSpeed": 0,
-    "isLadder": false,
-    "slipperiness": 0.6,
+    "isLadder": true,
+    "slipperiness": 0.2,
     "speedFactor": 1.0,
-    "jumpFactor": 2.0,
+    "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
-    "isNotColidable": false,
+    "isNotColidable": true,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "VINE"
     },
     "breakSound": {
       "value": ""
@@ -94,16 +94,16 @@
     "fallSound": {
       "value": ""
     },
-    "luminance": 13,
+    "luminance": 0,
     "unbreakable": false,
     "breakHarvestLevel": 1,
-    "spawnParticles": true,
+    "spawnParticles": false,
     "particleToSpawn": {
       "value": "CUSTOM:ShroomSpores"
     },
     "particleSpawningShape": "Spread",
-    "particleSpawningRadious": 0.1,
-    "particleAmount": 10,
+    "particleSpawningRadious": 0.5,
+    "particleAmount": 4,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
@@ -121,6 +121,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onTickUpdate": {
+      "name": "ReinforcedVineUpdateTick"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

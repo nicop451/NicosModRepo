@@ -20,7 +20,7 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 
-import net.mcreator.martinnico.procedures.GrappleHookHitsAnythingProcedure;
+import net.mcreator.martinnico.procedures.TreeSwingerProjectileHitsBlockProcedure;
 import net.mcreator.martinnico.init.MartinnicoModEntities;
 
 import java.util.Random;
@@ -60,30 +60,9 @@ public class TreeSwingerEntity extends AbstractArrow implements ItemSupplier {
 	}
 
 	@Override
-	public void playerTouch(Player entity) {
-		super.playerTouch(entity);
-		Entity sourceentity = this.getOwner();
-		double x = this.getX();
-		double y = this.getY();
-		double z = this.getZ();
-		Level world = this.level;
-		Entity imediatesourceentity = this;
-
-		GrappleHookHitsAnythingProcedure.execute(world, entity, imediatesourceentity);
-	}
-
-	@Override
 	protected void doPostHurtEffects(LivingEntity entity) {
 		super.doPostHurtEffects(entity);
 		entity.setArrowCount(entity.getArrowCount() - 1);
-		Entity sourceentity = this.getOwner();
-		double x = this.getX();
-		double y = this.getY();
-		double z = this.getZ();
-		Level world = this.level;
-		Entity imediatesourceentity = this;
-
-		GrappleHookHitsAnythingProcedure.execute(world, entity, imediatesourceentity);
 	}
 
 	@Override
@@ -95,11 +74,9 @@ public class TreeSwingerEntity extends AbstractArrow implements ItemSupplier {
 		Level world = this.level;
 		Entity entity = this.getOwner();
 		Entity imediatesourceentity = this;
-
-		GrappleHookHitsAnythingProcedure.execute(world, entity, imediatesourceentity);
 		if (this.inGround) {
 
-			GrappleHookHitsAnythingProcedure.execute(world, entity, imediatesourceentity);
+			TreeSwingerProjectileHitsBlockProcedure.execute(world, x, y, z);
 			this.discard();
 		}
 	}

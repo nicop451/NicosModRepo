@@ -33,6 +33,7 @@ public class MartinnicoModItems {
 	public static final Item BLOODSICKLE = register(new BloodsickleItem());
 	public static final Item LIFESTEAL = register(new LifestealItem());
 	public static final Item DARK_BLUE_MUSHROOM_BLOCK = register(MartinnicoModBlocks.DARK_BLUE_MUSHROOM_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final Item REINFORCED_VINE = register(MartinnicoModBlocks.REINFORCED_VINE, CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

@@ -25,7 +25,7 @@ import java.util.Collections;
 
 public class DarkBlueMushroomBlockBlock extends Block {
 	public DarkBlueMushroomBlockBlock() {
-		super(BlockBehaviour.Properties.of(Material.DECORATION).sound(SoundType.WOOD).strength(1f, 10f).lightLevel(s -> 13)
+		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.GRAVEL).strength(1f, 10f).lightLevel(s -> 13).jumpFactor(2f)
 				.hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
 		setRegistryName("dark_blue_mushroom_block");
 	}
@@ -51,11 +51,14 @@ public class DarkBlueMushroomBlockBlock extends Block {
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-		for (int l = 0; l < 5; ++l) {
-			double x0 = x + 0.5 + (random.nextFloat() - 0.5) * 0.2D;
-			double y0 = y + 1.2 + (random.nextFloat() - 0.5) * 0.2D * 100;
-			double z0 = z + 0.5 + (random.nextFloat() - 0.5) * 0.2D;
-			world.addParticle(MartinnicoModParticles.SHROOM_SPORES, x0, y0, z0, 0, 0, 0);
+		for (int l = 0; l < 10; ++l) {
+			double x0 = x + random.nextFloat();
+			double y0 = y + random.nextFloat();
+			double z0 = z + random.nextFloat();
+			double dx = (random.nextFloat() - 0.5D) * 0.1D;
+			double dy = (random.nextFloat() - 0.5D) * 0.1D;
+			double dz = (random.nextFloat() - 0.5D) * 0.1D;
+			world.addParticle(MartinnicoModParticles.SHROOM_SPORES, x0, y0, z0, dx, dy, dz);
 		}
 	}
 }
